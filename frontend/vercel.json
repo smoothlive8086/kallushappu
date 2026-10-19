@@ -1,0 +1,21 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "http://44.199.251.36:25568/api/:path*"
+    },
+    {
+      "source": "/uploads/:path*",
+      "destination": "http://44.199.251.36:25568/uploads/:path*"
+    },
+    {
+      "source": "/socket.io/:path*",
+      "destination": "http://44.199.251.36:25568/socket.io/:path*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
